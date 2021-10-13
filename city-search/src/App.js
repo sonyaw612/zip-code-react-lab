@@ -41,9 +41,8 @@ class App extends Component {
           <h3>Zip Codes for {this.state.cityName}: </h3>
           {/* { console.log(this.state.zipcodes)} */}
           <div>
-            { this.state.zipcodes.forEach((element) => {
-              console.log(element)
-              return <div>{ element }</div>
+            { this.state.zipcodes.map((element) => {
+              return <div className = "element">{ element }</div>
             }) }
           </div>
         </div>
